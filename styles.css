@@ -25,3 +25,25 @@ main {
     flex-grow: 1;
     background-color: #E1C681;
 }
+
+section {
+    display: flex;
+    width: 66rem;
+    flex-wrap: wrap;
+    margin: 6.25rem auto;
+}
+
+img {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 1rem;
+    color: #daa520;
+    background-size: cover;
+    background-position: center;
+    border-radius: 7px;
+    margin: .15rem;
+    text-shadow: 2px 3px 5px #000000;
+    width: 16.75rem;
+    height: 33rem;
+}

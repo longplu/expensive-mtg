@@ -2,7 +2,7 @@
 const BASE_URL= 'https://api.scryfall.com/cards/search';
 
 // Application State Variables
-let apiData;
+let apiData = [];
 
 // Cached Element References
 const $main = $('main');
@@ -17,11 +17,14 @@ function getData(){
     
     $.ajax(BASE_URL + '?order=usd&q=usd>=1000')
     .then(function(data){
-        apiData = data;
+        
+        for(let i = 0; i < 6; i++){
+            apiData.push(data.data[i])
+        }
         // console.log(apiData.data[0].name);
-        for (const card in apiData.data){console.log(apiData.data[card].prices.usd)};
+        // for (const card in apiData.data){console.log(apiData.data[card].prices.usd)};
         // console.log(apiData.data[0].image_uris.normal)
-        // render();
+        render();
     }, function(error){
 
     });
@@ -32,12 +35,13 @@ function getData(){
 function render(){
 
 
-    // const imgCards = apiData.map(function(imgCard){
-    //     return `
-    //         <article style="background-image: url(${imgCard.imageuris.normal})">
-    //         </article>;
-    //     `
-    // });
-    // $main.html(`<section>${imgCards}</section>`);
+    const imgCards = apiData.map(function(card){
+        return `
+            <img src="${card.image_uris.normal}">
+                <h3>${card.name}</h3>
+                <p>$${card.prices.usd}</p>
+        `
+    }).join('');
+    $main.html(`<section>${imgCards}</section>`);
 
 }
