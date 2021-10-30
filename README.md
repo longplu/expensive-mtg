@@ -1,6 +1,6 @@
 # Magic the Gathering Cards More Expensive than an iPhone Pro
 
-A simple web app for displaying 6 random mtg cards from the scryfall API that are over $1000 USD
+A simple web app for displaying the top 6 mtg cards from the scryfall API that are over $1000 USD 
 
 ## Technologies USED
 
