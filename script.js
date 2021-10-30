@@ -15,12 +15,12 @@ getData();
 
 function getData(){
     
-    $.ajax(BASE_URL + '?q=usd>=1000')
+    $.ajax(BASE_URL + '?order=usd&q=usd>=1000')
     .then(function(data){
         apiData = data;
-        console.log(apiData.data[0].name);
-        console.log(apiData.data[0].prices.usd);
-        console.log(apiData.data[0].image_uris.normal)
+        // console.log(apiData.data[0].name);
+        for (const card in apiData.data){console.log(apiData.data[card].prices.usd)};
+        // console.log(apiData.data[0].image_uris.normal)
         // render();
     }, function(error){
 
