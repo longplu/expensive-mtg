@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    min-height: 100vh;
+    font-family: 'Beleren Bold';
+}
+
+
+header, footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5rem;
+    color: white;
+    font-family: 'Beleren SmallCaps Bold';
+}
+
+main {
+    flex-grow: 1;
+    background-color: #E1C681;
+}
