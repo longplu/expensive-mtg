@@ -11,7 +11,7 @@ A simple web app for displaying the top 8 mtg cards from the scryfall API that a
 
 ## Screenshots
 
-![screenshot 1](https://imgur.com/arMTHPP)
+[Imgur](https://i.imgur.com/arMTHPP.png)
 
 # Getting Started
 
