@@ -11,12 +11,11 @@ A simple web app for displaying the top 8 mtg cards from the scryfall API that a
 
 ## Screenshots
 
-![screenshot 1](#)
-![screenshot 2](#)
+![screenshot 1](https://imgur.com/arMTHPP)
 
 # Getting Started
 
-[Click here](#) to see the site live
+[Click here](https://expensive-mtg.netlify.app/) to see the site live
 
 
 ## Future Enhancements
