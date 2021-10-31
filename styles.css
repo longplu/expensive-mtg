@@ -28,22 +28,30 @@ main {
 
 section {
     display: flex;
-    width: 66rem;
+    width: 60rem;
     flex-wrap: wrap;
+    justify-content: space-between;
     margin: 6.25rem auto;
 }
 
-img {
+article {
     display: flex;
     flex-direction: column;
-    justify-content: end;
-    padding: 1rem;
-    color: #daa520;
+    align-items: center;
+    text-align: center;
+    justify-content: flex-end;
+    color: #ffc226;
     background-size: cover;
     background-position: center;
-    border-radius: 7px;
+    border-radius: 9px;
     margin: .15rem;
     text-shadow: 2px 3px 5px #000000;
-    width: 16.75rem;
-    height: 33rem;
+    width: 12.5rem;
+    height: 17.5rem;
+}
+
+article div{
+    background-color: rgba(0, 0, 0, .33);
+    padding: .2rem;
+    width: 100%;
 }

@@ -18,7 +18,7 @@ function getData(){
     $.ajax(BASE_URL + '?order=usd&q=usd>=1000')
     .then(function(data){
         
-        for(let i = 0; i < 6; i++){
+        for(let i = 0; i < 8; i++){
             apiData.push(data.data[i])
         }
         // console.log(apiData.data[0].name);
@@ -37,9 +37,12 @@ function render(){
 
     const imgCards = apiData.map(function(card){
         return `
-            <img src="${card.image_uris.normal}">
+            <article style="background-image: url(${card.image_uris.normal})">
+                <div>
                 <h3>${card.name}</h3>
                 <p>$${card.prices.usd}</p>
+                </div>
+            </article>
         `
     }).join('');
     $main.html(`<section>${imgCards}</section>`);
